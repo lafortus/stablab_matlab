@@ -96,10 +96,9 @@ preimage=semicirc(circpnts,imagpnts,c.ksteps,r,spread,zerodist,c.lambda_steps)-0
 %circpnts=100; imagpnts=100; innerpnts = 50; r=1; 
 %spread=4; inner_radius=0.01;
 %preimage=semicirc2(circpnts,imagpnts,innerpnts,c.ksteps,r,spread,inner_radius,c.lambda_steps);
-%The countour to be used to pinpoint the eigenvalue at lambda=0.1765i when beta = 6.572
-%preimage = 0.1765*1i+0.05*exp(2*pi*1i*linspace(0,1,points+(points-1)*c.ksteps));
-%preimage = 0.1765*1i-0.1*1i+1i*linspace(0,.5,points+(points-1)*c.ksteps);
-%preimage = 0.16+0.05*exp(2*pi*1i*linspace(0,1,points+(points-1)*c.ksteps));
+%The countour to be used to pinpoint the eigenvalue at lambda=0.001623i when beta = 6.572
+%points=100;
+%preimage = 0.001623*1i+0.0001*exp(2*pi*1i*linspace(0,1,points+(points-1)*c.ksteps));
 
 %Below, conditions are checked to make sure the Evans function stays in a region where it is analytic  
 for cc = 1:length(preimage)
